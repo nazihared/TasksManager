@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Acheter des légumes",
+      "description": "Acheter des légumes pour le diner",
+      "date": "2024-07-01",
+      "time": "18:00",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Réunion avec l'équipe",
+      "description": "Réunion pour discuter du projet X",
+      "date": "2024-06-28",
+      "time": "10:00",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Envoyer le rapport",
+      "description": "Envoyer le rapport mensuel à la direction",
+      "date": "2024-02-29",
+      "time": "15:00",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Cours de yoga",
+      "description": "Participer au cours de yoga en ligne",
+      "date": "2024-07-2",
+      "time": "07:00",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Faire le lit",
+      "description": "Ranger les draps, les couvertures et les oreillers.",
+      "date": "2024-07-02",
+      "time": "08:30",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "Préparer le petit-déjeuner",
+      "description": "Faire du café ou du thé, préparer des toasts ou des fruits.",
+      "date": "2024-07-04",
+      "time": "08:00",
+      "completed": false
+    }
+  ]
+}
