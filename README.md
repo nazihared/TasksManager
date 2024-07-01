@@ -18,7 +18,7 @@ Cette application de gestion des tâches permet aux utilisateurs de créer, lire
 - **Frontend**: React, JavaScript, HTML, CSS
 - **Gestion d'État**: Context API 
 - **Routing**: React Router
-- **Styling**: tailwindcss
+- **Styling**: Tailwindcss
 - **Backend Mock**: JSON Server
 
 
@@ -64,17 +64,17 @@ Cette application de gestion des tâches permet aux utilisateurs de créer, lire
 **src/** : Contient les fichiers sources de l'application React.
 
 **components/** : Contient les composants React utilisés dans l'application.
-    **TaskForm.js** : Composant pour ajouter et éditer des tâches.
-    **TaskItem.js** : Composant pour afficher une tâche individuelle.
-    **TaskList.js** : Composant pour afficher la liste des tâches.
+**TaskForm.js** : Composant pour ajouter et éditer des tâches.
+**TaskItem.js** : Composant pour afficher une tâche individuelle.
+**TaskList.js** : Composant pour afficher la liste des tâches.
     
 **context/** : Contient le contexte de l'application pour la gestion des états globaux.
 
 **TaskContext.js** : Contexte pour les tâches.
 
 **pages/** : Contient les pages de l'application.
-    **TaskPage.js** : Page principale pour la gestion des tâches.
-    **TimelinePage.js** : Page pour afficher la timeline des tâches.
+**TaskPage.js** : Page principale pour la gestion des tâches.
+**TimelinePage.js** : Page pour afficher la timeline des tâches.
     
 **App.js** : Composant principal de l'application.
 
