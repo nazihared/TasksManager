@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Gestion des Tâches
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Cette application de gestion des tâches permet aux utilisateurs de créer, lire, mettre à jour et supprimer des tâches. Elle comprend une interface utilisateur pour gérer les tâches et une vue de la timeline pour afficher les tâches en fonction de leur date et heure.
 
-In the project directory, you can run:
+## Fonctionnalités
 
-### `npm start`
+- Ajouter une tâche
+- Mettre à jour une tâche
+- Supprimer une tâche
+- Afficher une liste de tâches
+- Afficher une timeline des tâches
+- Utilisation d'un backend simulé avec JSON Server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Stack Technique
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React, JavaScript, HTML, CSS
+- **Gestion d'État**: Context API 
+- **Routing**: React Router
+- **Styling**: tailwindcss
+- **Backend Mock**: JSON Server
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prérequis
 
-### `npm run build`
+- Node.js
+- npm (Node Package Manager)
+- Git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Cloner le dépôt**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/nazihared/TasksManager.git
+   cd TasksManager
 
-### `npm run eject`
+2. **Installer les dépendances**
+   
+   ```bash
+   npm install
+   
+## Démarrage du projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Démarrer le serveur JSON**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm run server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Cela démarrera un serveur JSON à l'adresse http://localhost:5000/tasks .
+   
+2. **Démarrer l'application React**
+   
+   ```bash
+   npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Cela démarrera l'application React à l'adresse http://localhost:3000.
 
-## Learn More
+## Structure des Dossiers
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**public/** : Contient les fichiers publics de l'application, comme index.html.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**src/** : Contient les fichiers sources de l'application React.
 
-### Code Splitting
+**components/** : Contient les composants React utilisés dans l'application.
+    **TaskForm.js** : Composant pour ajouter et éditer des tâches.
+    **TaskItem.js** : Composant pour afficher une tâche individuelle.
+    **TaskList.js** : Composant pour afficher la liste des tâches.
+    
+**context/** : Contient le contexte de l'application pour la gestion des états globaux.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**TaskContext.js** : Contexte pour les tâches.
 
-### Analyzing the Bundle Size
+**pages/** : Contient les pages de l'application.
+    **TaskPage.js** : Page principale pour la gestion des tâches.
+    **TimelinePage.js** : Page pour afficher la timeline des tâches.
+    
+**App.js** : Composant principal de l'application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Utilisation
 
-### Making a Progressive Web App
+### Ajouter une tâche
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Cliquez sur le bouton "Ajouter" pour afficher le formulaire d'ajout de tâche.
+2. Remplissez les informations de la tâche (titre, description, date, heure).
+3. Cliquez sur le bouton "Ajouter" pour enregistrer la tâche.
 
-### Advanced Configuration
+### Mettre à jour une tâche
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Cliquez sur  le bouton "Modifier" à côté de la tâche que vous souhaitez mettre à jour.
+2. Modifiez les informations de la tâche.
+3. Cliquez sur le bouton "Enregistrer" pour enregistrer les modifications.
 
-### Deployment
+### Supprimer une tâche
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Cliquez sur le bouton "Supprimer" à côté de la tâche que vous souhaitez supprimer.
+2. Confirmez la suppression.
 
-### `npm run build` fails to minify
+### Afficher la timeline des tâches
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Cliquez sur l'icône de la timeline en haut de la page pour accéder à la vue de la timeline.
+2. Faites défiler la timeline pour voir les tâches passées et à venir.
+
+## Contribution
+Les contributions sont les bienvenues ! Veuillez soumettre une pull request pour toute amélioration ou correction.
+
+## Licence
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
+## Auteur
+Nom: Naziha 
+GitHub: https://github.com/nazihared/TasksManager.git
+
+
